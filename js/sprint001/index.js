@@ -25,7 +25,7 @@ if (color === 'red') {
 const age = 19 
 age > 18 ? console.log(true) : console.log(false); 
 
-let x = 42;
+let x = 2;
 let y = '42';
 if (x === y) {
     console.log( "x и y равны по значению и типу");
@@ -49,7 +49,7 @@ if (myVariable1 === null) {
     console.log("Значение переменной было присвоено");
 }
 
-let n = 42;
+let n = 4;
 if (n%2 != 1) {
     console.log("Число " + n + " четное");
 } else if (n%2 == 1) {
@@ -108,4 +108,11 @@ switch (dayOfWeek) {
 }
 
 
-
+function pow(x,n) {
+    if ((x > 0) & (n > 0)) {
+     console.log(x**n);
+    } else {
+        console.log('jnvtyf')
+    }
+} 
+pow(2,-4) ;
