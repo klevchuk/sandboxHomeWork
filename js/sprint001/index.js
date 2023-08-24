@@ -92,27 +92,80 @@ console.log(str2122.toUpperCase() + "!");
 // Если dayOfWeek равна "Saturday" или "Sunday", выведите на экран сообщение "Выходной день".
 // Если значение переменной dayOfWeek не соответствует ни одному из вышеперечисленных случаев, выведите на экран сообщение "Некорректное значение дня недели".
 
-let dayOfWeek = "Monday";
-switch (dayOfWeek) {
-    case "Monday" || "Thutsday" || "Wednsday" || "Thursday" || "Friday":{
-        console.log("Будний день");
-        break;
+
+
+
+
+const simpleSumm = (o, p) => console.log(o + p);
+simpleSumm(7, 12);
+
+function isPositive1(r) {
+    if (r > 0) {
+        return true;
     }
-    case "Saturday" || "Sunday":{
-        console.log("Выходной день");
-        break;
+    if (r < 0) {
+        return false;
     }
-    default: {
-        console.log("Некорректное значение дня недели");
+}
+console.log(isPositive1(-97));
+
+const isPositive = (r) => {
+    if (r > 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(isPositive(78));
+
+
+
+// let dayOfWeek = "Thutsday";
+// switch (dayOfWeek) {
+//     case "Monday":
+//     case "Thutsday":
+//     case "Wednsday":
+//     case "Thursday":
+//     case "Friday": {
+//         console.log("Будний день");
+//         break;
+//         }
+
+//     case "Saturday":
+//     case "Sunday": {
+//         console.log("Выходной день");
+//         break;
+//     }
+//     default: {
+//         console.log("Некорректное значение дня недели");
+//     }
+// }
+
+// Перепеши  (заверни) наше старое задание 
+// создав функцию giveMeResult(),
+//  в которую будешь передавать день недели
+
+
+function giveMeResult(dayOfWeek) {
+    switch (dayOfWeek) {
+        case "Monday":
+        case "Thutsday":
+        case "Wednsday":
+        case "Thursday":
+        case "Friday": {
+            console.log("Будний день");
+            break;
+            }
+    
+        case "Saturday":
+        case "Sunday": {
+            console.log("Выходной день");
+            break;
+        }
+        default: {
+            console.log("Некорректное значение дня недели");
+        }
     }
 }
 
-
-function pow(x,n) {
-    if ((x > 0) & (n > 0)) {
-     console.log(x**n);
-    } else {
-        console.log('jnvtyf')
-    }
-} 
-pow(2,-4) ;
+giveMeResult("Sunday");
