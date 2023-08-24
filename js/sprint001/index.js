@@ -169,3 +169,21 @@ function giveMeResult(dayOfWeek) {
 }
 
 giveMeResult("Sunday");
+
+
+// Напишите функцию isInRange,
+//  которая принимает один аргумент - число,
+//   и возвращает true, если число находится
+//    в диапазоне от 10 до 20 включительно или равно 0 или равно 100,
+//     и false в противном случае. Используйте логические операторы && и ||.
+
+function isInRange(q) {
+    if (q >= 10  && q <= 20) {
+        return true;
+    } else if (q == 0 || q == 100) {
+        return true;
+    } else {return false}
+}
+
+
+console.log(isInRange(15));
