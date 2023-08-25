@@ -177,13 +177,31 @@ giveMeResult("Sunday");
 //    в диапазоне от 10 до 20 включительно или равно 0 или равно 100,
 //     и false в противном случае. Используйте логические операторы && и ||.
 
+// function isInRange(q) {
+//     if (q >= 10  && q <= 20) {
+//         return true;
+//     } else if (q == 0 || q == 100) {
+//         return true;
+//     } else {return false}
+// }
+
+
+// console.log(isInRange(15));
+
+// function isInR (c) {
+//     switch (c) {
+//         case c >=
+//     }
+// }
+
+
 function isInRange(q) {
-    if (q >= 10  && q <= 20) {
-        return true;
-    } else if (q == 0 || q == 100) {
-        return true;
-    } else {return false}
+   return q >= 10 && q <= 20 || q === 0 || q === 100;
 }
 
-
+console.log(isInRange(0));
+console.log(isInRange(100));
+console.log(isInRange(10));
+console.log(isInRange(20));
 console.log(isInRange(15));
+console.log(isInRange(33));
