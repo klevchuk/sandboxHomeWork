@@ -250,3 +250,11 @@ let arr = ['сдавайтесь', 'сдавайтесь', 'Не сдавайт�
 let move = arr.slice(2, 5);
 let moveString = move.join(", ");
 console.log(moveString);
+
+// Рисуем столько котиков, сколько захотим!
+let drawCats = function (howManyTimes) {
+    for (let i = 0; i < howManyTimes; i++) {
+        console.log(i + "=^.^=");
+    }
+};
+drawCats(3);
