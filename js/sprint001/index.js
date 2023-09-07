@@ -258,3 +258,8 @@ let drawCats = function (howManyTimes) {
     }
 };
 drawCats(3);
+
+const funk = (firstname) => {
+console.log("hello " + firstname);
+} 
+funk("Vlad");
